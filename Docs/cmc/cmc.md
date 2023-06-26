@@ -123,25 +123,25 @@ depth | 50 | Integer | Yes | -
 #### Success Response
 ```javascript
 {
-	"code": 0,
-	"code_num": 0,
-	"msg": "ok",
-	"message": "ok",
-	"data": {
-		"asks": [
-			{
-				"price": "27170.18000000",
-				"quantity": "0.93741000"
-			}
-		],
-		"bids": [
-			{
-				"price": "27170.17000000",
-				"quantity": "7.59207000"
-			}
-		],
-		"timestamp": 1685778768
-	}
+    "code": 0,
+        "code_num": 0,
+        "msg": "ok",
+        "message": "ok",
+        "data": {
+            "asks": [
+                [
+                    "30643.94000000",
+                    "5.09805000"
+                ]
+            ], 
+            "bids": [
+                [
+                    "30643.93000000",
+                    "0.68136000"
+                ]
+            ],
+            "timestamp": 1687661633
+    }
 }
 ```
 Name | Example            | Type  | Description
@@ -151,12 +151,12 @@ code_num | 0 | Integer |
 msg | ok | String |
 message | ok | String |
 data | - | Object |
-data.asks | - | Array |
-data.asks.price | 27170.18000000 | String |
-data.asks.quantity | 0.93741000 | String |
-data.bids | - | Array |
-data.bids.price | 27170.17000000 | String |
-data.bids.quantity | 7.59207000 | String |
+data.asks | - | Array | asks
+data.asks.0 | 27170.18000000 | String | quantity
+data.asks.1 | 0.93741000 | String | price
+data.bids | - | Array | bids
+data.bids.0 | 27170.17000000 | String | quantity
+data.bids.1 | 7.59207000 | String | price
 data.timestamp | 1685778768 | Integer |
 ## //trades/market_pair
 ```text
